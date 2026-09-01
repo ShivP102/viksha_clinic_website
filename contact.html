@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Orthopedic Appointment | JP Nagar Clinic</title>
+  <meta name="description" content="Book an appointment with Dr. Chethan Kumar, orthopedic surgeon in JP Nagar and RR Nagar, Bengaluru. Call, WhatsApp or use the clinic maps and timings.">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Viksha Orthopedic Clinic",
+    "telephone": "+919876543210",
+    "email": "info@vikshaclinic.com",
+    "areaServed": "Bengaluru",
+    "department": [
+      {"@type": "MedicalClinic", "name": "JP Nagar Clinic", "address": {"@type": "PostalAddress", "streetAddress": "3rd Phase, JP Nagar, Near Mini Forest", "addressLocality": "Bengaluru", "postalCode": "560078", "addressCountry": "IN"}},
+      {"@type": "MedicalClinic", "name": "RR Nagar Clinic", "address": {"@type": "PostalAddress", "streetAddress": "Ideal Homes Layout, RR Nagar", "addressLocality": "Bengaluru", "postalCode": "560098", "addressCountry": "IN"}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__name">Dr. Chethan Kumar</span>
+        <span class="logo__tag">Orthopedic Surgeon · Bengaluru</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li class="nav__dropdown">
+            <a class="nav__link" href="services/index.html">Services</a>
+            <div class="nav__dropdown-menu">
+              <a href="services/knee-replacement.html">Knee Replacement</a>
+              <a href="services/hip-replacement.html">Hip Replacement</a>
+              <a href="services/arthroscopy.html">Arthroscopy</a>
+              <a href="services/sports-injury.html">Sports Injury Treatment</a>
+              <a href="services/shoulder-rotator-cuff.html">Shoulder &amp; Rotator Cuff</a>
+              <a href="services/acl-meniscus.html">ACL / Meniscus Injury</a>
+              <a href="services/fracture-trauma.html">Fracture &amp; Trauma Surgery</a>
+              <a href="services/back-pain-slip-disc.html">Back Pain &amp; Slip Disc</a>
+              <a href="services/neck-pain.html">Neck Pain &amp; Cervical Spondylosis</a>
+              <a href="services/arthritis.html">Arthritis Treatment</a>
+              <a href="services/pediatric-orthopedics.html">Pediatric Orthopedics</a>
+              <a href="services/osteoporosis.html">Osteoporosis &amp; Bone Health</a>
+            </div>
+          </li>
+          <li><a class="nav__link" href="conditions/index.html">Conditions</a></li>
+          <li><a class="nav__link" href="blog/index.html">Blog</a></li>
+          <li><a class="nav__link nav__link--active" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary" href="contact.html">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span> Contact</nav>
+      <h1>Book an appointment</h1>
+      <p>Orthopedic consultations in JP Nagar and RR Nagar. WhatsApp booking, phone and maps.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--2">
+        <div>
+          <h2>Send a WhatsApp booking</h2>
+          <p>The form opens WhatsApp with your details. Clinic addresses below are placeholders until you share the exact pins.</p>
+          <form class="form" id="appointment-form">
+            <div class="form__row">
+              <div class="form__group"><label for="name">Full name</label><input id="name" name="name" required></div>
+              <div class="form__group"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required></div>
+            </div>
+            <div class="form__group"><label for="email">Email</label><input id="email" name="email" type="email"></div>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="location">Preferred clinic</label>
+                <select id="location" name="location">
+                  <option>JP Nagar</option>
+                  <option>RR Nagar</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                  <option>General consultation</option>
+                  <option>Knee Replacement</option>
+                  <option>Hip Replacement</option>
+                  <option>Sports Injury</option>
+                  <option>Fracture / Trauma</option>
+                  <option>Spine / Back Pain</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__group"><label for="date">Preferred date</label><input id="date" name="date" type="date"></div>
+            <div class="form__group"><label for="message">Message</label><textarea id="message" name="message"></textarea></div>
+            <button class="btn btn--primary btn--lg" type="submit">Send via WhatsApp</button>
+            <p class="form-note">See our <a href="privacy.html">privacy policy</a>.</p>
+          </form>
+          <div class="btn-group" style="margin-top:1.5rem;">
+            <a class="btn btn--outline" data-phone-href href="tel:+919876543210">Call clinic</a>
+            <a class="btn btn--whatsapp" data-whatsapp-href href="#">WhatsApp</a>
+          </div>
+        </div>
+        <div>
+          <article class="card" style="margin-bottom:1.5rem;">
+            <h3>JP Nagar clinic</h3>
+            <p>3rd Phase, JP Nagar, Near Mini Forest, Bengaluru – 560078</p>
+            <p>Mon–Sat: 9:00 AM – 8:00 PM<br>Sun: 10:00 AM – 2:00 PM</p>
+            <iframe title="JP Nagar clinic map placeholder" src="https://www.google.com/maps?q=JP+Nagar+Bengaluru&output=embed" width="100%" height="220" style="border:0;border-radius:12px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </article>
+          <article class="card">
+            <h3>RR Nagar clinic</h3>
+            <p>Ideal Homes Layout, RR Nagar, Bengaluru – 560098</p>
+            <p>Mon–Sat: 10:00 AM – 7:00 PM<br>Sun: Closed</p>
+            <iframe title="RR Nagar clinic map placeholder" src="https://www.google.com/maps?q=RR+Nagar+Bengaluru&output=embed" width="100%" height="220" style="border:0;border-radius:12px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <p>© <span id="copyright-year">2026</span> Dr. Chethan Kumar · Orthopedic Surgeon – JP Nagar &amp; RR Nagar</p>
+        <p><a href="privacy.html">Privacy</a></p>
+      </div>
+      <p class="footer__disclaimer">Not for emergencies. Visit the nearest hospital ER if you have an open fracture, loss of consciousness, or sudden inability to walk.</p>
+    </div>
+  </footer>
+  <a class="whatsapp-float" data-whatsapp-href href="#" aria-label="WhatsApp">💬</a>
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/site-ui.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form.js"></script>
+</body>
+</html>
