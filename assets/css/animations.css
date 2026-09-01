@@ -49,4 +49,8 @@
     opacity: 1;
     transform: none;
   }
+
+  @view-transition {
+    navigation: none;
+  }
 }
