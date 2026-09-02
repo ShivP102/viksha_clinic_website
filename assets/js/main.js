@@ -155,4 +155,48 @@
       window.location.href = url.href;
     }, 280);
   });
+
+  (function initFlipCards() {
+    const cards = document.querySelectorAll('.flip-card');
+    if (!cards.length) return;
+
+    function closeOthers(except) {
+      cards.forEach(function (card) {
+        if (card === except) return;
+        card.classList.remove('is-flipped');
+        card.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    function setFlipped(card, open) {
+      closeOthers(card);
+      card.classList.toggle('is-flipped', open);
+      card.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    cards.forEach(function (card) {
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('aria-expanded', 'false');
+      card.addEventListener('click', function (e) {
+        if (e.target.closest('a')) return;
+        setFlipped(card, !card.classList.contains('is-flipped'));
+      });
+      card.addEventListener('keydown', function (e) {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        e.preventDefault();
+        setFlipped(card, !card.classList.contains('is-flipped'));
+      });
+    });
+
+    function flipFromHash() {
+      const id = (window.location.hash || '').slice(1);
+      if (!id) return;
+      const card = document.getElementById(id);
+      if (!card || !card.classList.contains('flip-card')) return;
+      setFlipped(card, true);
+    }
+
+    window.addEventListener('hashchange', flipFromHash);
+    if (window.location.hash) window.setTimeout(flipFromHash, 0);
+  })();
 })();

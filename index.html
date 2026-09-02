@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orthopedic Surgeon JP Nagar | Dr. Chethan Kumar</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Orthopedic Surgeon JP Nagar | Dr. Chethan Kumar">
+  <meta property="og:description" content="Dr. Chethan Kumar, consultant orthopedic surgeon in JP Nagar & RR Nagar, Bengaluru. Knee & hip replacement, sports injury and trauma care. Book an appointment.">
+  <meta property="og:image" content="assets/images/doctor/doctor-placeholder.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
   <meta name="description" content="Dr. Chethan Kumar, consultant orthopedic surgeon in JP Nagar & RR Nagar, Bengaluru. Knee & hip replacement, sports injury and trauma care. Book an appointment.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="./">
@@ -40,9 +46,17 @@
       {
         "@type": "FAQPage",
         "mainEntity": [
-          {"@type": "Question", "name": "Who is the best orthopedic doctor in JP Nagar?", "acceptedAnswer": {"@type": "Answer", "text": "Dr. Chethan Kumar is a consultant orthopedic surgeon practising in JP Nagar and RR Nagar, Bengaluru, with expertise in joint replacement, sports injuries and trauma."}},
-          {"@type": "Question", "name": "When should I see an orthopedic specialist in RR Nagar?", "acceptedAnswer": {"@type": "Answer", "text": "See a specialist if joint or back pain lasts more than a few days, you have swelling after injury, night pain, locking of the knee, or difficulty walking."}},
-          {"@type": "Question", "name": "Do you treat knee replacement patients from Banashankari and Jayanagar?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Patients from Banashankari, Jayanagar, Uttarahalli, Kanakapura Road and Bengaluru South regularly visit the JP Nagar and RR Nagar clinics."}}
+          {"@type": "Question", "name": "Who is a good orthopedic doctor in JP Nagar?", "acceptedAnswer": {"@type": "Answer", "text": "Look for a consultant orthopedic surgeon who treats joint replacement, sports injuries and trauma, and who practises locally. Dr. Chethan Kumar consults in JP Nagar and RR Nagar."}},
+          {"@type": "Question", "name": "Is there an orthopedic specialist in RR Nagar?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Viksha Orthopedic Clinic in RR Nagar offers consultations for joint pain, fractures and sports injuries. Hours are listed on the contact page."}},
+          {"@type": "Question", "name": "When do I need a knee replacement surgeon in JP Nagar, Bengaluru?", "acceptedAnswer": {"@type": "Answer", "text": "When pain limits walking, sleep or daily activity despite medicines and physiotherapy, and X-rays show advanced arthritis, replacement may be discussed. Surgery is never the first step for everyone."}},
+          {"@type": "Question", "name": "Who does hip replacement near RR Nagar?", "acceptedAnswer": {"@type": "Answer", "text": "Dr. Chethan Kumar evaluates hip arthritis, avascular necrosis and fracture-related hip problems, and discusses replacement when conservative care is no longer enough."}},
+          {"@type": "Question", "name": "Can a sports injury doctor in JP Nagar treat ACL tears?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. ACL and meniscus injuries are assessed with examination and MRI when needed. Treatment may be rehab, repair or reconstruction depending on age and activity."}},
+          {"@type": "Question", "name": "Do you treat trauma and fractures in RR Nagar?", "acceptedAnswer": {"@type": "Answer", "text": "Fractures and accident injuries are evaluated promptly. Some cases need hospital-based surgery; others are managed with plaster or bracing."}},
+          {"@type": "Question", "name": "How do I book an orthopedic appointment?", "acceptedAnswer": {"@type": "Answer", "text": "Use the WhatsApp form on this site, call the clinic number, or visit the contact page for maps and timings."}},
+          {"@type": "Question", "name": "Is orthopedic treatment only surgery?", "acceptedAnswer": {"@type": "Answer", "text": "No. Most patients start with medicines, activity modification, injections and physiotherapy. Surgery is advised when it clearly improves function or prevents worsening."}},
+          {"@type": "Question", "name": "Is this website medical advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. Content is educational. Diagnosis and treatment require an in-person consultation. For emergencies, go to the nearest hospital ER."}},
+          {"@type": "Question", "name": "Can I message on WhatsApp instead of calling?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The floating WhatsApp button and appointment form both open a chat with a pre-filled message. WhatsApp is not for emergencies."}},
+          {"@type": "Question", "name": "Do I need an MRI before the first visit?", "acceptedAnswer": {"@type": "Answer", "text": "Not always. Bring previous X-rays or scans if you have them. Many first visits start with history, examination and plain X-rays."}}
         ]
       }
     ]
@@ -52,19 +66,22 @@
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a class="logo" href="index.html">
+      <div class="header__brand">
+        <a class="logo" href="index.html">
         <span class="logo__name">Dr. Chethan Kumar</span>
         <span class="logo__tag">Orthopedic Surgeon · Bengaluru</span>
       </a>
+        <button type="button" class="lang-toggle" data-lang-toggle aria-pressed="false" aria-label="Switch language">ಕನ್ನಡ</button>
+      </div>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" aria-label="Primary">
         <ul class="nav__list">
-          <li><a class="nav__link nav__link--active" href="index.html">Home</a></li>
-          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link nav__link--active" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a class="nav__link" href="about.html" data-i18n="nav.about">About</a></li>
           <li class="nav__dropdown">
-            <a class="nav__link" href="services/index.html">Services</a>
+            <a class="nav__link" href="services/index.html" data-i18n="nav.services">Services</a>
             <div class="nav__dropdown-menu">
               <a href="services/knee-replacement.html">Knee Replacement</a>
               <a href="services/hip-replacement.html">Hip Replacement</a>
@@ -80,11 +97,18 @@
               <a href="services/osteoporosis.html">Osteoporosis &amp; Bone Health</a>
             </div>
           </li>
-          <li><a class="nav__link" href="conditions/index.html">Conditions</a></li>
-          <li><a class="nav__link" href="blog/index.html">Blog</a></li>
-          <li><a class="nav__link" href="contact.html">Contact</a></li>
+          <li><a class="nav__link" href="conditions/index.html" data-i18n="nav.conditions">Conditions</a></li>
+          <li><a class="nav__link" href="blog/index.html" data-i18n="nav.blog">Blog</a></li>
+          <li class="nav__dropdown">
+            <a class="nav__link" href="locations/jp-nagar.html" data-i18n="nav.locations">Locations</a>
+            <div class="nav__dropdown-menu">
+              <a href="locations/jp-nagar.html">JP Nagar clinic</a>
+              <a href="locations/rr-nagar.html">RR Nagar clinic</a>
+            </div>
+          </li>
+          <li><a class="nav__link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
-        <a class="btn btn--primary" href="contact.html">Book Appointment</a>
+        <a class="btn btn--primary" href="contact.html" data-i18n="nav.book">Book Appointment</a>
       </nav>
     </div>
   </header>
@@ -94,12 +118,12 @@
     <div class="hero__overlay"></div>
     <div class="container">
       <div class="hero__content">
-        <span class="hero__eyebrow">Orthopedic Doctor in JP Nagar &amp; RR Nagar</span>
-        <h1>Trusted Orthopedic Care. Expert Hands. Better Mobility.</h1>
+        <span class="hero__eyebrow" data-i18n="hero.eyebrow">Orthopedic Doctor in JP Nagar &amp; RR Nagar</span>
+        <h1 data-i18n="hero.title">Trusted Orthopedic Care. Expert Hands. Better Mobility.</h1>
         <p class="hero__sub">Dr. Chethan Kumar – Consultant Orthopedic, Joint Replacement, Sports Injury &amp; Trauma Specialist in JP Nagar and RR Nagar, Bengaluru.</p>
         <div class="btn-group">
-          <a class="btn btn--primary btn--lg" href="contact.html">Book Appointment</a>
-          <a class="btn btn--secondary btn--lg" href="services/index.html">View Services</a>
+          <a class="btn btn--primary btn--lg" href="contact.html" data-i18n="hero.cta1">Book Appointment</a>
+          <a class="btn btn--secondary btn--lg" href="services/index.html" data-i18n="hero.cta2">View Services</a>
         </div>
       </div>
     </div>
@@ -143,25 +167,17 @@
 
   <section class="section section--gray" id="stats">
     <div class="container">
-      <div class="stats fade-up">
-        <div class="stat">
-          <div class="stat__number">15+</div>
-          <div class="stat__label">Years of experience</div>
-        </div>
-        <div class="stat">
-          <div class="stat__number">2,000+</div>
-          <div class="stat__label">Surgeries performed</div>
-        </div>
-        <div class="stat">
-          <div class="stat__number">5,000+</div>
-          <div class="stat__label">Patients treated</div>
-        </div>
+      <div class="stats fade-up" style="grid-template-columns:repeat(2,1fr);max-width:640px;margin:0 auto;">
         <div class="stat">
           <div class="stat__number">2</div>
           <div class="stat__label">Clinics in Bengaluru South</div>
         </div>
+        <div class="stat">
+          <div class="stat__number">JP &amp; RR</div>
+          <div class="stat__label">Nagar locations</div>
+        </div>
       </div>
-      <p class="text-center" style="margin-top:1.5rem;font-size:0.875rem;color:var(--color-gray-400);">Figures are placeholders until clinic-verified statistics are added.</p>
+      <p class="text-center" style="margin-top:1.5rem;font-size:0.875rem;color:var(--color-gray-600);">Surgery counts and years of experience will be published after the clinic verifies them.</p>
     </div>
   </section>
 
@@ -270,51 +286,10 @@
     <div class="container">
       <div class="section-header fade-up">
         <span class="section-label">Patient trust</span>
-        <h2>Reviews and mobility stories</h2>
-        <p class="section-subtitle">Placeholder reviews until verified Google reviews are connected. Stories are anonymized and do not guarantee results.</p>
+        <h2>Mobility stories</h2>
+        <p class="section-subtitle">Anonymized examples of typical care pathways. They are not Google reviews and do not guarantee results. Verified reviews will be added when the clinic Google profile is connected.</p>
       </div>
-      <div class="carousel fade-up" data-carousel>
-        <div class="carousel__track">
-          <div class="carousel__slide">
-            <article class="card review-card">
-              <div class="review-card__stars">★★★★★</div>
-              <p class="review-card__text">“Knee pain that kept me from walking in JP Nagar parks is much better after a clear plan and physiotherapy.”</p>
-              <div class="review-card__author">R. S.</div>
-              <div class="review-card__meta">Knee osteoarthritis · JP Nagar</div>
-            </article>
-          </div>
-          <div class="carousel__slide">
-            <article class="card review-card">
-              <div class="review-card__stars">★★★★★</div>
-              <p class="review-card__text">“Sports injury care was straightforward. I understood when I could return to cricket.”</p>
-              <div class="review-card__author">A. K.</div>
-              <div class="review-card__meta">ACL injury · Jayanagar</div>
-            </article>
-          </div>
-          <div class="carousel__slide">
-            <article class="card review-card">
-              <div class="review-card__stars">★★★★★</div>
-              <p class="review-card__text">“Fracture follow-up in RR Nagar was timely. The team explained every X-ray.”</p>
-              <div class="review-card__author">M. P.</div>
-              <div class="review-card__meta">Trauma care · RR Nagar</div>
-            </article>
-          </div>
-          <div class="carousel__slide">
-            <article class="card review-card">
-              <div class="review-card__stars">★★★★★</div>
-              <p class="review-card__text">“Frozen shoulder was frustrating. Gradual improvement with injections and exercises.”</p>
-              <div class="review-card__author">S. N.</div>
-              <div class="review-card__meta">Shoulder pain · Banashankari</div>
-            </article>
-          </div>
-        </div>
-        <div class="carousel__nav">
-          <button class="carousel__btn" type="button" data-carousel-prev aria-label="Previous reviews">‹</button>
-          <button class="carousel__btn" type="button" data-carousel-next aria-label="Next reviews">›</button>
-        </div>
-      </div>
-
-      <div class="grid grid--3" style="margin-top:3rem;">
+      <div class="grid grid--3">
         <article class="card story-card fade-up">
           <span class="story-card__label">Mobility story</span>
           <h3>Walking without a stick</h3>
@@ -340,11 +315,10 @@
         <div class="fade-up">
           <span class="section-label">Appointments</span>
           <h2>Book a consultation in JP Nagar or RR Nagar</h2>
-          <p>Submit the form to open WhatsApp with your details filled in. You can also call or message directly.</p>
+          <p>Submit the form to open WhatsApp with your details filled in. You can also message directly.</p>
           <p><strong>JP Nagar:</strong> 3rd Phase, JP Nagar, Near Mini Forest, Bengaluru – 560078<br>Mon–Sat: 9:00 AM – 8:00 PM | Sun: 10:00 AM – 2:00 PM</p>
           <p><strong>RR Nagar:</strong> Ideal Homes Layout, RR Nagar, Bengaluru – 560098<br>Mon–Sat: 10:00 AM – 7:00 PM | Sun: Closed</p>
           <div class="btn-group" style="margin-top:1.5rem;">
-            <a class="btn btn--primary" data-phone-href data-phone-text href="tel:+919876543210">Call</a>
             <a class="btn btn--whatsapp" data-whatsapp-href href="#">WhatsApp</a>
           </div>
         </div>
@@ -478,10 +452,6 @@
           <div class="faq-item__answer">No. Content is educational. Diagnosis and treatment require an in-person consultation. For emergencies, go to the nearest hospital ER.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-item__question" type="button" aria-expanded="false">Do you accept insurance? <span class="faq-item__icon">+</span></button>
-          <div class="faq-item__answer">Insurance and TPA details will be updated once confirmed by the clinic. Please ask at booking.</div>
-        </div>
-        <div class="faq-item">
           <button class="faq-item__question" type="button" aria-expanded="false">How do I reach the clinic by road? <span class="faq-item__icon">+</span></button>
           <div class="faq-item__answer">Use the Google Maps embeds on the contact page. Addresses are currently placeholders — replace them with exact clinic pins.</div>
         </div>
@@ -509,11 +479,12 @@
         <div>
           <h4>Quick links</h4>
           <ul class="footer__links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="services/index.html">Services</a></li>
-            <li><a href="conditions/index.html">Conditions</a></li>
-            <li><a href="blog/index.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="services/index.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="conditions/index.html" data-i18n="nav.conditions">Conditions</a></li>
+            <li><a href="blog/index.html" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="locations/jp-nagar.html" data-i18n="nav.locations">Locations</a></li>
             <li><a href="privacy.html">Privacy</a></li>
           </ul>
         </div>
@@ -547,6 +518,8 @@
   <script src="assets/js/site-config.js"></script>
   <script src="assets/js/site-ui.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n.js"></script>
+
   <script src="assets/js/carousel.js"></script>
   <script src="assets/js/form.js"></script>
 </body>

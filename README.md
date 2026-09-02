@@ -35,4 +35,6 @@ python3 tools/checks/nap_placeholders.py
 python3 tools/checks/links.py
 python3 tools/checks/seo_meta.py
 python3 tools/checks/medical_qa.py
+python3 tools/checks/a11y.py
+python3 tools/checks/performance.py
 ```

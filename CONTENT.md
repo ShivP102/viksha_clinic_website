@@ -13,6 +13,7 @@ Edit [`assets/js/site-config.js`](assets/js/site-config.js) first — phone, Wha
 | Qualifications | MBBS, MS (Orthopedics), Fellowship… |
 | Stats | 15+ years / 2,000+ surgeries / 5,000+ patients |
 | Doctor photo | Generated placeholder at `assets/images/doctor/doctor-placeholder.jpg` |
-| Reviews | Fictional initials — replace with Google reviews |
+| Reviews | Removed fake Google carousel; anonymized mobility stories only |
+| Stats | Unverified surgery/year counts hidden until clinic confirms |
 | Social links | `#` |
 | Domain | Relative URLs; sitemap uses path-only loc |

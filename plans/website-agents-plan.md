@@ -32,6 +32,8 @@ Site files stay at repo root. Ops files sit beside them but are excluded from ho
   link-ia/SKILL.md
   seo-meta/SKILL.md
   medical-qa/SKILL.md
+  a11y-check/SKILL.md
+  performance-check/SKILL.md
 tools/
   facts/clinic-facts.json
   facts/medical-policy.md
@@ -48,11 +50,13 @@ In Cursor, with this repo open:
 - “Check links”
 - “SEO audit”
 - “Medical QA on knee replacement”
+- “Accessibility audit”
+- “Performance check”
 
 The agent loads the matching skill, runs the script, and summarizes `tools/reports/*.md`.
 
 Medical QA **flags only**. A clinician must approve copy before it goes live. Do not invent citations.
 
-## Out of v1
+## Out of v1 (still later)
 
-A11y, performance, page factory, changelog — same `tools/` + skills pattern later.
+Page factory and changelog agents — same `tools/` + skills pattern. Razorpay and consultation-fee features are out of scope.
