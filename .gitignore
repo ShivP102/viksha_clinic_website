@@ -1,0 +1,5 @@
+tools/reports/*.md
+!tools/reports/.gitkeep
+.DS_Store
+.env
+.env.*

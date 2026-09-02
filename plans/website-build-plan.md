@@ -8,7 +8,7 @@
 
 ## Prompt Review: What's Already Strong
 
-The draft prompt (see [`website_builing_prompt.md`](website_builing_prompt.md)) is **~80% build-ready**. It clearly defines:
+The draft prompt (see [`website_builing_prompt.md`](../website_builing_prompt.md)) is **~80% build-ready**. It clearly defines:
 
 - **Brand direction** — premium hospital aesthetic, navy/teal palette, glassmorphism, sticky nav, WhatsApp CTA
 - **Core pages** — hero, about, 12 service pages, conditions, trust, appointment, FAQ, blog, contact

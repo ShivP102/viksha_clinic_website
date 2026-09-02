@@ -1,0 +1,12 @@
+---
+description: Ops folders are not the public website. Do not put secrets in the repo. Medical copy needs clinician approval.
+alwaysApply: true
+---
+
+# Viksha clinic ops
+
+- Public site files: HTML, `assets/`, `sitemap.xml`, `robots.txt`, `.htaccess`.
+- Do not treat `.cursor/`, `tools/`, or `plans/` as Hostinger content. They must stay out of `public_html` (see `tools/deploy/rsync-exclude.txt`).
+- Never commit API keys or real patient data.
+- Do not auto-publish medical rewrites. Run `medical-qa` and wait for clinician sign-off.
+- After changing phone, hours, or addresses, run `python3 tools/checks/nap_placeholders.py` and update `tools/facts/clinic-facts.json`.

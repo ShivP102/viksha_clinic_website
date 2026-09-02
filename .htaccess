@@ -1,0 +1,8 @@
+# Deny HTTP access if the whole Git repo is uploaded by mistake.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^\.cursor(/|$) - [F,L]
+  RewriteRule ^tools(/|$) - [F,L]
+  RewriteRule ^plans(/|$) - [F,L]
+  RewriteRule ^AGENTS\.md$ - [F,L]
+</IfModule>

@@ -1,0 +1,16 @@
+# Ops and VCS — never copy to public_html
+.git/
+.cursor/
+tools/
+plans/
+AGENTS.md
+CONTENT.md
+README.md
+website_builing_prompt.md
+
+# Reports and local junk
+tools/reports/*.md
+.DS_Store
+*.swp
+.env
+.env.*
