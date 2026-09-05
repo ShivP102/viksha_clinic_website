@@ -83,7 +83,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(10, 37, 64, 0.96);
+  background: rgba(26, 35, 50, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   height: var(--header-height);
@@ -322,7 +322,7 @@
   min-height: 85vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 55%, #0d4a4a 100%);
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 55%, #9A5F2A 100%);
   overflow: hidden;
 }
 
@@ -331,7 +331,7 @@
   inset: 0;
   background:
     radial-gradient(ellipse at 80% 50%, rgba(13, 148, 136, 0.25) 0%, transparent 55%),
-    linear-gradient(90deg, rgba(10, 37, 64, 0.85) 0%, rgba(10, 37, 64, 0.45) 100%);
+    linear-gradient(90deg, rgba(26, 35, 50, 0.85) 0%, rgba(26, 35, 50, 0.45) 100%);
   z-index: 1;
 }
 
@@ -1133,7 +1133,7 @@ a.card:hover {
 }
 
 .cta-banner {
-  background: linear-gradient(90deg, #0F766E 0%, #0A2540 62%, #062033 100%);
+  background: linear-gradient(90deg, #B87333 0%, #1A2332 62%, #121820 100%);
   border-radius: var(--radius-xl);
   padding: var(--space-3xl);
   text-align: center;

@@ -7,11 +7,11 @@
 
 :root {
   /* Colors */
-  --color-navy: #0A2540;
-  --color-navy-light: #1B3A5C;
-  --color-teal: #0D9488;
-  --color-teal-light: #14B8A6;
-  --color-teal-dark: #0F766E;
+  --color-navy: #1A2332;
+  --color-navy-light: #2C3E50;
+  --color-teal: #B87333;
+  --color-teal-light: #D4956A;
+  --color-teal-dark: #9A5F2A;
   --color-white: #FFFFFF;
   --color-off-white: #F8FAFC;
   --color-gray-50: #F1F5F9;
@@ -45,10 +45,10 @@
   --radius-xl: 24px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(10, 37, 64, 0.08);
-  --shadow-md: 0 4px 16px rgba(10, 37, 64, 0.1);
-  --shadow-lg: 0 8px 32px rgba(10, 37, 64, 0.12);
-  --shadow-glass: 0 8px 32px rgba(10, 37, 64, 0.08);
+  --shadow-sm: 0 1px 3px rgba(26, 35, 50, 0.08);
+  --shadow-md: 0 4px 16px rgba(26, 35, 50, 0.1);
+  --shadow-lg: 0 8px 32px rgba(26, 35, 50, 0.12);
+  --shadow-glass: 0 8px 32px rgba(26, 35, 50, 0.08);
 
   /* Transitions */
   --transition-fast: 150ms ease;
@@ -188,7 +188,7 @@ p:last-child {
 }
 
 .section--navy {
-  background: linear-gradient(105deg, #062033 0%, #0A3D4A 42%, #0D9488 100%);
+  background: linear-gradient(105deg, #121820 0%, #1A2332 42%, #B87333 100%);
   color: var(--color-white);
 }
 

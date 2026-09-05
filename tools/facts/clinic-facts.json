@@ -3,8 +3,8 @@
   "notes": "Seeded from assets/js/site-config.js and CONTENT.md. Set verified true only after the clinic confirms every field.",
   "doctor": {
     "name": "Dr. Chethan Kumar",
-    "title": "Consultant Orthopedic Surgeon",
-    "qualifications": "MBBS, MS (Orthopedics), Fellowship in Joint Replacement & Sports Medicine",
+    "title": "Consultant Orthopaedic Surgeon",
+    "qualifications": "MBBS, MS in Orthopaedics, Fellowship in Joint Replacement and Sports Medicine",
     "qualificationsVerified": false,
     "stats": {
       "experience": "15+",
@@ -14,7 +14,7 @@
     }
   },
   "brand": {
-    "name": "Viksha Orthopedic Clinic"
+    "name": "Viksha Orthopaedic Clinic"
   },
   "contact": {
     "phone": "+919876543210",
@@ -26,14 +26,14 @@
   "clinics": [
     {
       "id": "jp-nagar",
-      "name": "Viksha Orthopedic Clinic – JP Nagar",
+      "name": "Viksha Orthopaedic Clinic – JP Nagar",
       "address": "3rd Phase, JP Nagar, Near Mini Forest, Bengaluru – 560078",
       "timings": "Mon–Sat: 9:00 AM – 8:00 PM | Sun: 10:00 AM – 2:00 PM",
       "mapIsPlaceholder": true
     },
     {
       "id": "rr-nagar",
-      "name": "Viksha Orthopedic Clinic – RR Nagar",
+      "name": "Viksha Orthopaedic Clinic – RR Nagar",
       "address": "Ideal Homes Layout, RR Nagar, Bengaluru – 560098",
       "timings": "Mon–Sat: 10:00 AM – 7:00 PM | Sun: Closed",
       "mapIsPlaceholder": true

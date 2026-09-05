@@ -5,20 +5,20 @@
 const SITE_CONFIG = {
   doctor: {
     name: "Dr. Chethan Kumar",
-    title: "Consultant Orthopedic Surgeon",
-    qualifications: "MBBS, MS (Orthopedics), Fellowship in Joint Replacement & Sports Medicine",
+    title: "Consultant Orthopaedic Surgeon",
+    qualifications: "MBBS, MS in Orthopaedics, Fellowship in Joint Replacement and Sports Medicine",
     experience: "15+",
     surgeries: "2,000+",
     patients: "5,000+",
-    bio: "Fellowship-trained orthopedic surgeon specializing in hip & knee replacement, arthroscopy, sports injuries, trauma, and fracture care. Compassionate, evidence-based treatment with a patient-first philosophy.",
+    bio: "Dr. Chethan Kumar is a consultant orthopaedic surgeon serving patients in JP Nagar, RR Nagar, Banashankari, Uttarahalli, Kanakapura Road, Jayanagar and South Bengaluru. He combines surgical expertise with conservative treatment approaches, helping patients understand their condition and explore all appropriate options before making a decision. Patient-first, evidence-based care focused on restoring mobility.",
     photo: "assets/images/doctor/doctor-placeholder.jpg",
-    photoAlt: "Dr. Chethan Kumar - Orthopedic Surgeon in JP Nagar and RR Nagar, Bengaluru"
+    photoAlt: "Dr. Chethan Kumar - Orthopaedic Surgeon in JP Nagar and RR Nagar, Bengaluru"
   },
 
   brand: {
-    name: "Viksha Orthopedic Clinic",
-    tagline: "Trusted Orthopedic Care. Expert Hands. Better Mobility.",
-    subheading: "Consultant Orthopedic, Joint Replacement, Sports Injury & Trauma Specialist in JP Nagar and RR Nagar, Bengaluru."
+    name: "Viksha Orthopaedic Clinic",
+    tagline: "Trusted Orthopaedic Care. Expert Hands. Better Mobility.",
+    subheading: "Consultant Orthopaedic, Joint Replacement, Sports Injury & Trauma Specialist in JP Nagar and RR Nagar, Bengaluru."
   },
 
   contact: {
@@ -31,7 +31,7 @@ const SITE_CONFIG = {
   clinics: [
     {
       id: "jp-nagar",
-      name: "Viksha Orthopedic Clinic – JP Nagar",
+      name: "Viksha Orthopaedic Clinic – JP Nagar",
       area: "JP Nagar",
       address: "3rd Phase, JP Nagar, Near Mini Forest, Bengaluru – 560078",
       timings: "Mon–Sat: 9:00 AM – 8:00 PM | Sun: 10:00 AM – 2:00 PM",
@@ -39,7 +39,7 @@ const SITE_CONFIG = {
     },
     {
       id: "rr-nagar",
-      name: "Viksha Orthopedic Clinic – RR Nagar",
+      name: "Viksha Orthopaedic Clinic – RR Nagar",
       area: "RR Nagar",
       address: "Ideal Homes Layout, RR Nagar, Bengaluru – 560098",
       timings: "Mon–Sat: 10:00 AM – 7:00 PM | Sun: Closed",
@@ -49,7 +49,7 @@ const SITE_CONFIG = {
 
   serviceAreas: [
     "JP Nagar", "RR Nagar", "Banashankari", "Uttarahalli",
-    "Kanakapura Road", "Jayanagar", "Bengaluru South"
+    "Kanakapura Road", "Jayanagar", "South Bengaluru"
   ],
 
   social: {
@@ -61,7 +61,7 @@ const SITE_CONFIG = {
 
   seo: {
     siteUrl: "",
-    defaultTitle: "Dr. Chethan Kumar | Orthopedic Surgeon Bengaluru",
-    defaultDescription: "Consultant Orthopedic Surgeon in JP Nagar & RR Nagar, Bengaluru. Expert in knee replacement, hip replacement, sports injury & trauma surgery. Book appointment today."
+    defaultTitle: "Dr. Chethan Kumar | Orthopaedic Surgeon Bengaluru",
+    defaultDescription: "Consultant orthopaedic surgeon in JP Nagar and RR Nagar, Bengaluru. Patient-first, evidence-based care. Knee and hip replacement, sports injury and trauma surgery. Book an appointment."
   }
 };
