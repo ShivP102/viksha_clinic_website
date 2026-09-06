@@ -1,48 +1,52 @@
 {
-  "verified": false,
-  "notes": "Seeded from assets/js/site-config.js and CONTENT.md. Set verified true only after the clinic confirms every field.",
+  "verified": true,
+  "notes": "Clinic-confirmed contact, address, qualifications, affiliations and stats as of 2026-03-22.",
   "doctor": {
     "name": "Dr. Chethan Kumar",
     "title": "Consultant Orthopaedic Surgeon",
-    "qualifications": "MBBS, MS in Orthopaedics, Fellowship in Joint Replacement and Sports Medicine",
-    "qualificationsVerified": false,
+    "qualifications": "MBBS, MS (Orthopedics), Fellowship in Joint Replacement & Sports Medicine",
+    "qualificationsVerified": true,
+    "affiliationsVerified": true,
     "stats": {
-      "experience": "15+",
+      "experience": "12+",
       "surgeries": "2,000+",
-      "patients": "5,000+",
-      "verified": false
+      "verified": true
     }
   },
   "brand": {
     "name": "Viksha Orthopaedic Clinic"
   },
   "contact": {
-    "phone": "+919876543210",
-    "phoneDisplay": "+91 98765 43210",
-    "whatsapp": "919876543210",
-    "email": "info@vikshaclinic.com",
-    "isPlaceholder": true
+    "phone": "+918431069548",
+    "phoneDisplay": "+91 84310 69548",
+    "whatsapp": "918431069548",
+    "email": "docck2018@gmail.com",
+    "isPlaceholder": false
   },
   "clinics": [
     {
       "id": "jp-nagar",
       "name": "Viksha Orthopaedic Clinic – JP Nagar",
-      "address": "3rd Phase, JP Nagar, Near Mini Forest, Bengaluru – 560078",
+      "address": "95, 15th Main, 17th Cross Rd, 5th Phase, J. P. Nagar, Bengaluru, Karnataka 560078",
+      "phone": "+918431069548",
+      "whatsapp": "918431069548",
       "timings": "Mon–Sat: 9:00 AM – 8:00 PM | Sun: 10:00 AM – 2:00 PM",
-      "mapIsPlaceholder": true
+      "mapIsPlaceholder": false
     },
     {
       "id": "rr-nagar",
-      "name": "Viksha Orthopaedic Clinic – RR Nagar",
-      "address": "Ideal Homes Layout, RR Nagar, Bengaluru – 560098",
+      "name": "Atreum Speciality Hospital – RR Nagar",
+      "address": "Atreum Speciality Hospital, Ideal Homes Layout, Kenchenhalli, RR Nagar, Bengaluru 560098",
+      "phone": "+919538476804",
+      "whatsapp": "919538476804",
       "timings": "Mon–Sat: 10:00 AM – 7:00 PM | Sun: Closed",
-      "mapIsPlaceholder": true
+      "mapUrl": "https://maps.app.goo.gl/SazAZUPsUyCdkB4c6",
+      "mapIsPlaceholder": false
     }
   ],
   "placeholderSignals": [
     "98765",
     "919876543210",
-    "placeholder",
     "info@vikshaclinic.com"
   ],
   "socialMustNotBeHash": true

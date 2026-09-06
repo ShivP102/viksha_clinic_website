@@ -12,6 +12,7 @@ Open this folder in Cursor. Ops files (`.cursor/`, `tools/`, `plans/`) are **not
 | Medical QA | medical-qa | `python3 tools/checks/medical_qa.py` |
 | Accessibility audit | a11y-check | `python3 tools/checks/a11y.py` |
 | Performance check | performance-check | `python3 tools/checks/performance.py` |
+| Apply copy review | apply-copy | `python3 tools/extract/apply_copy.py <pdf-or-md>` |
 
 Reports land in `tools/reports/` (gitignored except `.gitkeep`).
 

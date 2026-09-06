@@ -261,6 +261,46 @@
   form.querySelectorAll('select').forEach(enhanceSelect);
   form.querySelectorAll('input[type="date"]').forEach(enhanceDate);
 
+  function applyClinicFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const clinic = (params.get('clinic') || '').toLowerCase();
+    const locationSelect = form.querySelector('[name="location"]');
+    if (locationSelect && clinic) {
+      const map = {
+        'jp-nagar': 'JP Nagar',
+        'jp': 'JP Nagar',
+        'rr-nagar': 'RR Nagar',
+        'rr': 'RR Nagar'
+      };
+      const value = map[clinic] || clinic;
+      Array.prototype.forEach.call(locationSelect.options, function (opt, index) {
+        if (opt.value === value || opt.textContent.trim() === value) {
+          locationSelect.selectedIndex = index;
+        }
+      });
+      locationSelect.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+
+    const service = params.get('service');
+    const serviceSelect = form.querySelector('[name="service"]');
+    if (serviceSelect && service) {
+      const decoded = decodeURIComponent(service);
+      Array.prototype.forEach.call(serviceSelect.options, function (opt, index) {
+        if (opt.value === decoded || opt.textContent.trim() === decoded) {
+          serviceSelect.selectedIndex = index;
+        }
+      });
+      serviceSelect.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+  }
+
+  applyClinicFromUrl();
+  if (window.location.search) {
+    window.setTimeout(function () {
+      form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  }
+
   document.addEventListener('click', function (e) {
     if (!form.contains(e.target)) closeAll();
     else if (!e.target.closest('.select, .date-field')) closeAll();
@@ -310,6 +350,14 @@
       return;
     }
 
+    var whatsappNumber = SITE_CONFIG.contact.whatsapp;
+    if (SITE_CONFIG.clinics && location) {
+      var clinic = SITE_CONFIG.clinics.find(function (c) {
+        return c.area === location;
+      });
+      if (clinic && clinic.whatsapp) whatsappNumber = clinic.whatsapp;
+    }
+
     const lines = [
       'Hello Dr. Chethan Kumar, I would like to book an appointment.',
       '',
@@ -323,7 +371,7 @@
     ].filter(Boolean);
 
     const text = encodeURIComponent(lines.join('\n'));
-    const url = 'https://wa.me/' + SITE_CONFIG.contact.whatsapp + '?text=' + text;
+    const url = 'https://wa.me/' + whatsappNumber + '?text=' + text;
     window.open(url, '_blank', 'noopener');
   });
 })();

@@ -1,5 +1,7 @@
 tools/reports/*.md
 !tools/reports/.gitkeep
+tools/inbox/
+tools/.vendor/
 .DS_Store
 .env
 .env.*

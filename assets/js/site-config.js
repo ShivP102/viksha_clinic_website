@@ -6,13 +6,17 @@ const SITE_CONFIG = {
   doctor: {
     name: "Dr. Chethan Kumar",
     title: "Consultant Orthopaedic Surgeon",
-    qualifications: "MBBS, MS in Orthopaedics, Fellowship in Joint Replacement and Sports Medicine",
-    experience: "15+",
+    qualifications: "MBBS, MS (Orthopedics), Fellowship in Joint Replacement & Sports Medicine",
+    experience: "12+",
     surgeries: "2,000+",
-    patients: "5,000+",
     bio: "Dr. Chethan Kumar is a consultant orthopaedic surgeon serving patients in JP Nagar, RR Nagar, Banashankari, Uttarahalli, Kanakapura Road, Jayanagar and South Bengaluru. He combines surgical expertise with conservative treatment approaches, helping patients understand their condition and explore all appropriate options before making a decision. Patient-first, evidence-based care focused on restoring mobility.",
-    photo: "assets/images/doctor/doctor-placeholder.jpg",
-    photoAlt: "Dr. Chethan Kumar - Orthopaedic Surgeon in JP Nagar and RR Nagar, Bengaluru"
+    photo: "assets/images/doctor/dr-chetan-photo.jpg",
+    photoAlt: "Dr. Chethan Kumar - Orthopaedic Surgeon in JP Nagar and RR Nagar, Bengaluru",
+    affiliations: [
+      { role: "Consultant", name: "Atreum Speciality Hospital, RR Nagar" },
+      { role: "Visiting consultant", name: "HAL Hospital, Suranjandas Road, Vimanapura, Bengaluru – 560017" },
+      { role: "Visiting consultant", name: "Manipal Hospital, Jayanagar 9th Block" }
+    ]
   },
 
   brand: {
@@ -22,10 +26,10 @@ const SITE_CONFIG = {
   },
 
   contact: {
-    phone: "+919876543210",
-    phoneDisplay: "+91 98765 43210",
-    whatsapp: "919876543210",
-    email: "info@vikshaclinic.com"
+    email: "docck2018@gmail.com",
+    phone: "+918431069548",
+    phoneDisplay: "+91 84310 69548",
+    whatsapp: "918431069548"
   },
 
   clinics: [
@@ -33,17 +37,27 @@ const SITE_CONFIG = {
       id: "jp-nagar",
       name: "Viksha Orthopaedic Clinic – JP Nagar",
       area: "JP Nagar",
-      address: "3rd Phase, JP Nagar, Near Mini Forest, Bengaluru – 560078",
+      address: "95, 15th Main, 17th Cross Rd, 5th Phase, J. P. Nagar, Bengaluru, Karnataka 560078",
       timings: "Mon–Sat: 9:00 AM – 8:00 PM | Sun: 10:00 AM – 2:00 PM",
-      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5!2d77.585!3d12.906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU0JzIxLjYiTiA3N8KwMzUnMDYuMCJF!5e0!3m2!1sen!2sin!4v1"
+      areaNote: "Convenient for Banashankari, Jayanagar and Kanakapura Road.",
+      phone: "+918431069548",
+      phoneDisplay: "+91 84310 69548",
+      whatsapp: "918431069548",
+      mapUrl: "https://maps.app.goo.gl/b2Ttrd8EPeWkWTKo8",
+      mapEmbed: "https://www.google.com/maps?q=95%2C+15th+Main%2C+17th+Cross+Rd%2C+5th+Phase%2C+J.+P.+Nagar%2C+Bengaluru%2C+Karnataka+560078&output=embed"
     },
     {
       id: "rr-nagar",
-      name: "Viksha Orthopaedic Clinic – RR Nagar",
+      name: "Atreum Speciality Hospital – RR Nagar",
       area: "RR Nagar",
-      address: "Ideal Homes Layout, RR Nagar, Bengaluru – 560098",
+      address: "Atreum Speciality Hospital, Ideal Homes Layout, Kenchenhalli, RR Nagar, Bengaluru 560098",
       timings: "Mon–Sat: 10:00 AM – 7:00 PM | Sun: Closed",
-      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5!2d77.505!3d12.925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU1JzMwLjAiTiA3N8KwMzAnMTguMCJF!5e0!3m2!1sen!2sin!4v1"
+      areaNote: "Convenient for Uttarahalli and west of Kanakapura Road.",
+      phone: "+919538476804",
+      phoneDisplay: "+91 95384 76804",
+      whatsapp: "919538476804",
+      mapUrl: "https://maps.app.goo.gl/SazAZUPsUyCdkB4c6",
+      mapEmbed: "https://www.google.com/maps?q=Atreum+Speciality+Hospital%2C+Ideal+Homes+Layout%2C+Kenchenhalli%2C+RR+Nagar%2C+Bengaluru+560098&output=embed"
     }
   ],
 
@@ -53,10 +67,10 @@ const SITE_CONFIG = {
   ],
 
   social: {
-    facebook: "#",
-    instagram: "#",
-    linkedin: "#",
-    youtube: "#"
+    facebook: "https://www.facebook.com/share/1Ed8m8Ps2Z/",
+    instagram: "https://www.instagram.com/drchethankumarortho?utm_source=qr&stkn=MWFhODU1czh0MzlzZQ==",
+    linkedin: "https://www.linkedin.com/in/dr-chethan-kumar-790919258/",
+    youtube: ""
   },
 
   seo: {
