@@ -29,7 +29,35 @@
 
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.nav');
+  const headerInner = document.querySelector('.header__inner');
   const dropdowns = document.querySelectorAll('.nav__dropdown');
+  const mobileNavMq = window.matchMedia('(max-width: 900px)');
+
+  function placeNavForViewport() {
+    if (!nav || !headerInner) return;
+    if (mobileNavMq.matches) {
+      if (nav.parentElement !== document.body) {
+        document.body.appendChild(nav);
+      }
+      return;
+    }
+    nav.classList.remove('is-open');
+    document.body.style.overflow = '';
+    if (toggle) {
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open menu');
+    }
+    if (nav.parentElement !== headerInner) {
+      headerInner.appendChild(nav);
+    }
+  }
+
+  placeNavForViewport();
+  if (typeof mobileNavMq.addEventListener === 'function') {
+    mobileNavMq.addEventListener('change', placeNavForViewport);
+  } else if (typeof mobileNavMq.addListener === 'function') {
+    mobileNavMq.addListener(placeNavForViewport);
+  }
 
   if (nav) nav.id = nav.id || 'site-nav';
   if (toggle && nav) {
@@ -40,6 +68,16 @@
       toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       document.body.style.overflow = open ? 'hidden' : '';
     });
+
+    nav.addEventListener('click', function (e) {
+      if (!mobileNavMq.matches || !nav.classList.contains('is-open')) return;
+      const link = e.target.closest('.nav__dropdown-menu a[href], .nav__list > li > .nav__link[href], .btn[href]');
+      if (!link) return;
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open menu');
+      document.body.style.overflow = '';
+    });
   }
 
   dropdowns.forEach(function (drop) {
@@ -48,7 +86,7 @@
     trigger.setAttribute('aria-haspopup', 'true');
     trigger.setAttribute('aria-expanded', 'false');
     trigger.addEventListener('click', function (e) {
-      if (window.innerWidth <= 900) {
+      if (mobileNavMq.matches) {
         e.preventDefault();
         const open = drop.classList.toggle('is-open');
         trigger.setAttribute('aria-expanded', open ? 'true' : 'false');

@@ -95,7 +95,7 @@ body {
   line-height: 1.6;
   color: var(--color-gray-800);
   background-color: var(--color-white);
-  overflow-x: hidden;
+  overflow-x: clip;
   animation: page-fade-in 0.45s ease both;
 }
 
